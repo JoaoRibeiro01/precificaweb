@@ -1,5 +1,5 @@
 
-##PrecificaWeb - Projeto de Automação com Selenium - README
+#PrecificaWeb - Projeto de Automação com Selenium - README
 
 Objetivo:
 O objetivo deste projeto é automatizar a busca de preços de produtos em dois sites diferentes, Buscapé e Google Shopping, filtrando produtos dentro de uma faixa de preço específica. Os resultados serão agregados em um DataFrame do Pandas e enviados por e-mail em formato HTML, simulando um relatório para uma empresa.
