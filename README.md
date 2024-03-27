@@ -1,34 +1,32 @@
-# PrecificaWeb com Selenium e Pandas
 
-## Descrição
-O PrecificaWeb com Selenium e Pandas é uma ferramenta de automação web desenvolvida para facilitar a pesquisa de preços online. Utilizando o Selenium para automatizar a interação com os navegadores e o Pandas para manipulação de dados, o PrecificaWeb permite aos usuários coletar e comparar preços de produtos em diferentes websites de forma eficiente.
+##PrecificaWeb - Projeto de Automação com Selenium - README
 
-## Funcionalidades Principais
-- Coleta automatizada de preços de produtos em diversos websites.
-- Comparação de preços entre diferentes fontes.
-- Interface amigável para visualização e análise dos dados coletados.
-- Salva os resultados em um DataFrame do Pandas para fácil manipulação e análise.
+Objetivo:
+O objetivo deste projeto é automatizar a busca de preços de produtos em dois sites diferentes, Buscapé e Google Shopping, filtrando produtos dentro de uma faixa de preço específica. Os resultados serão agregados em um DataFrame do Pandas e enviados por e-mail em formato HTML, simulando um relatório para uma empresa.
 
-## Como Usar
-1. Instalação:
-   - Clone o repositório para o seu ambiente local.
-   - Certifique-se de ter o Python instalado em seu sistema.
-   - Instale o Selenium e o Pandas utilizando o gerenciador de pacotes do Python: `pip install selenium pandas`.
-   - Faça o download do driver apropriado para o navegador que deseja utilizar (por exemplo, ChromeDriver para o Google Chrome).
-   - Coloque o driver baixado em um diretório acessível pelo sistema.
+##Requisitos:
 
-2. Configuração:
-   - Antes de usar o PrecificaWeb, é necessário configurar os parâmetros de pesquisa, como os URLs dos websites a serem pesquisados e os critérios de seleção dos produtos.
-   - Além disso, configure o caminho para o driver do Selenium no arquivo de configuração.
+Python 3.x instalado no sistema.
+Bibliotecas necessárias instaladas:
+Selenium
+Pandas
+win32com.client (para envio de e-mails)
+webdriver_manager (para gerenciamento de drivers do Selenium)
 
-3. Execução:
-   - Após configurar os parâmetros, execute o programa para iniciar a coleta de preços.
-   - O Selenium abrirá o navegador especificado, realizará a navegação nos websites configurados e coletará os preços dos produtos.
-   - Os resultados serão armazenados em um DataFrame do Pandas para fácil manipulação e análise.
+##Configuração:
 
-## Contribuições
-Contribuições são bem-vindas! Se você encontrar algum problema ou tiver alguma sugestão de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+Certifique-se de ter todas as bibliotecas mencionadas instaladas. Você pode instalá-las executando pip install nome_da_biblioteca.
+Baixe o WebDriver correspondente ao seu navegador (por exemplo, ChromeDriver para o Google Chrome) e coloque-o no PATH do sistema ou especifique o caminho do driver no script.
+Configure as credenciais do seu e-mail SMTP para enviar e-mails. Você pode configurar variáveis de ambiente para manter suas credenciais seguras.
+Edite o arquivo config.py para ajustar os parâmetros como faixa de preço desejada, termos de busca e informações de e-mail.
+Execução:
 
-## Contato
-Para mais informações, entre em contato com João Ribeiro em joaomatheus9k@hotmail.com 
+Execute o script main.py.
+O script irá acessar os sites, buscar os produtos, filtrá-los e criar um DataFrame do Pandas com os resultados.
+Em seguida, será gerado um e-mail com os resultados em formato HTML e enviado para o destinatário especificado no arquivo de configuração.
+
+##Recomendações:
+
+Certifique-se de não violar os Termos de Serviço dos sites ao automatizar as buscas.
+Mantenha as configurações de e-mail seguras para evitar o acesso não autorizado à sua conta
 
